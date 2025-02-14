@@ -185,7 +185,7 @@ async def connect_to_wss(protocol_proxy, user_id):
                             #logger.info(f"UID: {truncate_userid(user_id)} | {node_type} | 已发送PING | 数据: {send_message}")
 
                         rand_sleep = random.uniform(10, 30)
-                        logger.info(f"UID: {truncate_userid(user_id)} | {node_type} | 下次PING在 {rand_sleep:.2f} 秒后，！")
+                        #logger.info(f"UID: {truncate_userid(user_id)} | {node_type} | 下次PING在 {rand_sleep:.2f} 秒后，！")
                         await asyncio.sleep(rand_sleep)
 
                 await asyncio.sleep(DELAY_INTERVAL)
@@ -259,7 +259,7 @@ async def connect_to_wss(protocol_proxy, user_id):
                             #logger.debug(f"UID: {truncate_userid(user_id)} | {node_type} | 发送PONG | 数据: {pong_response}")
                             await asyncio.sleep(DELAY_INTERVAL)
                             await websocket.send(json.dumps(pong_response))
-                            logger.success(f"UID: {truncate_userid(user_id)} | {node_type} | 已发送PONG | 数据: {pong_response}")
+                            #logger.success(f"UID: {truncate_userid(user_id)} | {node_type} | 已发送PONG | 数据: {pong_response}")
 
                 except websockets.exceptions.ConnectionClosedError as e:
                     #logger.error(f"UID: {truncate_userid(user_id)} | {node_type} | 连接关闭错误 | 代理: {truncate_proxy(protocol_proxy)} | 错误: {str(e)} | 剩余代理数量: {total_proxies}")
