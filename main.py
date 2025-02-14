@@ -61,8 +61,8 @@ import os
 current_path = os.getcwd()
 
 # 拼接文件路径
-FILE_UID = os.path.join(current_path, 'uid.txt')
-FILE_PROXY = os.path.join(current_path, 'proxy.txt')
+FILE_UID = os.path.join(current_path, 'grass','uid.txt')
+FILE_PROXY = os.path.join(current_path, 'grass','proxy.txt')
 USERAGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.2365.57",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.2365.52",
