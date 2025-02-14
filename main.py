@@ -55,8 +55,8 @@ def get_proxy_count():
 ONETIME_PROXY = get_proxy_count()
 DELAY_INTERVAL = 0.5
 MAX_RETRIES = 3
-FILE_UID = "/root/content/grass/uid.txt"
-FILE_PROXY = "/root/content/grass/proxy.txtt"
+FILE_UID = "/content/grass/uid.txt"
+FILE_PROXY = "/content/grass/proxy.txtt"
 USERAGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.2365.57",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.2365.52",
