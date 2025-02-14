@@ -55,8 +55,14 @@ def get_proxy_count():
 ONETIME_PROXY = get_proxy_count()
 DELAY_INTERVAL = 0.5
 MAX_RETRIES = 3
-FILE_UID = "/content/grass/uid.txt"
-FILE_PROXY = "/content/grass/proxy.txt"
+import os
+
+# 获取当前工作目录
+current_path = os.getcwd()
+
+# 拼接文件路径
+FILE_UID = os.path.join(current_path, 'uid.txt')
+FILE_PROXY = os.path.join(current_path, 'proxy.txt')
 USERAGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.2365.57",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.2365.52",
